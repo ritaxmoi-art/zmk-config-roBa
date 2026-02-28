@@ -101,10 +101,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp TAB  &kp PLUS      &kp NUMBER_7  &kp NUMBER_8                       &kp NUMBER_9                                &kp ESC        &kp F4          &kp PRINTSCREEN  &kp F11    &kp F12
+&trans   &kp MINUS     &kp NUMBER_4  &kp NUMBER_5                       &kp NUMBER_6  &trans         &kp LEFT_WIN   &kp PAGE_UP    &kp F2          &kp UP_ARROW     &kp F9     &kp LC(V)
+&trans   &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2                       &kp NUMBER_3  &kp EQUAL      &kp RIGHT_WIN  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN         &kp RIGHT  &kp LC(C)
+&trans   &kp SLASH     &kp PERIOD    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp NUMBER_0  &kp SPACE      &trans         &trans                                                     &kp LC(Z)
             >;
         };
 
