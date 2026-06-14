@@ -2,4 +2,25 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache west modules
+        uses: actions/cache@v4
+        continue-on-error: true
+        with:
+          path: |
+            .west
+            modules
+            zephyr
+            bootloader
+          key: ${{ runner.os }}-west-${{ hashFiles('config/west.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-west-
+
+      - name: ZMK Build
+        uses: caksoylar/zmk-build-action@v3
+        with:
+          username: ritaxmoi-art
