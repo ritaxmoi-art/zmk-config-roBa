@@ -90,10 +90,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                            &kp Y        &kp U  &kp I     &kp O         &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G                 &kp LS(LG(S))               &kp ESC        &kp H        &kp J  &kp K     &kp L         &mkp MB4
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B                 &kp TAB                     &kp DEL        &kp N        &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
-&kp GRAVE         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 3 SPACE      &kp BACKSPACE  &lt 1 ENTER                                 &mkp MB5
+&kp A                   &kp W         &kp E         &kp R                   &kp T                                                            &kp Y        &kp U  &kp I     &kp O         &kp P
+&kp A                   &kp S         &kp D         &kp F                   &kp G                 &kp LS(LG(S))               &kp ESC        &kp H        &kp J  &kp K     &kp L         &mkp MB4
+&kp Z                   &kp X         &kp C         &kp V                   &kp B                 &kp TAB                     &kp DEL        &kp N        &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
+&lt_to_layer_0 6 GRAVE  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 SPACE  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 3 SPACE      &kp BACKSPACE  &lt 1 ENTER                                 &mkp MB5
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -150,10 +150,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans        &trans        &trans        &trans        &kp ESC  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans   &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans        &trans        &trans        &trans        &trans   &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
