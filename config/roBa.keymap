@@ -81,7 +81,6 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
-
     };
 
     keymap {
@@ -95,7 +94,7 @@
 &lt_to_layer_0 6 GRAVE  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 SPACE  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 3 SPACE      &kp BACKSPACE  &lt 1 ENTER                                 &mkp MB5
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         FUNCTION {
