@@ -75,7 +75,7 @@
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>,<&msc SCRL_DOWN>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
             // 追加: スクロールのタップ時間を設定 (20ms)
 
@@ -97,10 +97,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W         &kp E         &kp R        &kp T                                                 &kp Y        &kp U  &kp I     &kp O         &kp P
-&kp A        &kp S         &kp D         &kp F        &kp G                 &kp ESCAPE       &kp EQUAL      &kp H        &kp J  &kp K     &kp L         &mkp MB4
-&kp Z        &kp X         &kp C         &kp V        &kp B                 &kp TAB          &kp DELETE     &kp N        &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
-&lt 6 GRAVE  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE  &mt LEFT_SHIFT SPACE  &lt 3 SPACE      &kp BACKSPACE  &lt 1 ENTER                                 &mkp MB5
+&kp Q        &kp W         &kp E         &kp R        &kp T                                                 &kp Y        &kp U  &kp I     &kp O  &kp P
+&kp A        &kp S         &kp D         &kp F        &kp G                 &kp ESCAPE       &kp G          &kp H        &kp J  &kp K     &kp L  &mkp MB4
+&kp Z        &kp X         &kp C         &kp V        &kp B                 &kp TAB          &kp DELETE     &kp N        &kp M  &mkp MB1  &mo 5  &mkp MB2
+&lt 6 GRAVE  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE  &mt LEFT_SHIFT SPACE  &lt 3 SPACE      &kp BACKSPACE  &lt 1 ENTER                          &mkp MB5
             >;
 
             sensor-bindings = <&scroll_up_down>;
